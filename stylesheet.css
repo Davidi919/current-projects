@@ -1,9 +1,32 @@
 #container-intro {
-  /* full width container */
 	width: 100vw;
 	padding: 5em;
   margin-left: calc(-50vw + 50%);
-	background-color: grey;
+	background-color: navy;
 	color: white;
-  /* full width container */
 }
+/*mobile styling */
+@media only screen and (max-width: 600px) {
+	/*scale header down*/
+	#blog-header h1 {
+		font-size:  15vw;
+		margin-left:-2.5%;
+		text-align:center;
+	}
+	/*tighten content*/
+	body {
+		text-align:center;
+		line-height:1.25em;
+	}
+	#container-intro {
+		padding: 1em;
+	}
+	/* scale images */
+	img {
+		width:100%;
+	}
+	figcaption {
+		color: grey;
+		font-style: italic;
+	}
+    }
