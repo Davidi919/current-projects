@@ -15,8 +15,12 @@
 /*wide screen styling */
 
 p {
-	line-height: 3.5vw;
+	line-height: 3vw;
 	font-size: 1.2em;
+	font-weight:300;
+}
+h1, h2, h3, h4 {
+	color:#022C5E;
 }
 
 /* hover color fix */
@@ -38,23 +42,59 @@ p {
     color: red;
 }
 
+/* general styles */
+#chap-head {
+}
+
 /* container styling */
 #container-intro {
 	width: 100vw;
-	padding: 5em;
+	padding: 8.25vw;
   margin-left: calc(-50vw + 50%);
 	background-color: #022C5E;
 	color: white;
+}
+
+#container-p1 h2 {
+
+	text-align:center;
+	margin-bottom: 2vw;
 }
 
 #container-p2 {
 	clear: right;
 	margin-top: 17vw;
 	margin-left: calc(-50vw + 50%);
-	padding: 5vw;
+	padding: 8.25vw;
 	width: 100vw;
 	border: 2px solid #022C5E;
 }
+
+#container-p3 {
+	width:100vw;
+	margin-left: calc(-50vw + 50%);
+	margin-top: -2vw;
+	padding: 8.25vw;
+	background-color: rgba(100,100,100,0.05);
+}
+
+#container-p3 h3 {
+	text-align: center;
+}
+
+#container-p4 {
+	border: 2px solid #022C5E;
+	width: 100vw;
+	padding: 8.25vw;
+  margin-left: calc(-50vw + 50%);
+	margin-top:-2vw;
+
+}
+#container-p4 h3 {
+	text-align:center;
+	font-size: 2em;
+}
+
 
 /* ------ image styling ------- */
 figcaption {
@@ -62,17 +102,47 @@ figcaption {
 		font-style: italic;
 		font-size: .75em;
 	}
-
-#figure-1 {
-	float: right;
+img {
 	padding: 5px;
 	border: 1px solid rgba(150,150,150, 0.2);
+}
+#figure-1 {
+	float: right;
 }
 .fig-cap-1 {
 	clear: right;
 	float:right;
 }
 
+#figure-2 {
+	float: right;
+}
+.fig-cap-2 {
+	clear: right;
+	float: right;
+}
+#figure-4 {
+	float: right;
+}
+.fig-cap-4 {
+	clear: right;
+	float: right;
+}
+
+#figure-6 {
+	float: right;
+}
+.fig-cap-6 {
+	clear: right;
+	float: right;
+}
+#figure-8 {
+	display: block;
+	margin: 0 auto;
+}
+.fig-cap-8 {
+	text-align:center;
+}
 
 
 /* ------ mobile styling ----------- */
@@ -86,7 +156,6 @@ figcaption {
 	}
 	/*tighten content*/
 	body {
-		background-color: pink;
 		text-align:center;
 		line-height:1.25em;
 	}
