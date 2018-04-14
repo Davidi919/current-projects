@@ -14,8 +14,13 @@
 
 /*wide screen styling */
 
+p {
+	line-height: 3.5vw;
+	font-size: 1.2em;
+}
+
 /* hover color fix */
-#container-p1 p, #container-p2 p, #container-p3 p, #container-p4 p, #container-p5 p, #container-p6 p, #container-closing p {
+#container-p1 p, #container-p2 p, #container-p3 p, #container-p4 p, #container-p5 p, #container-p6 p, #container-closer p {
 	color: black;
 }
 
@@ -33,22 +38,44 @@
     color: red;
 }
 
-/* intro styling */
+/* container styling */
 #container-intro {
 	width: 100vw;
 	padding: 5em;
   margin-left: calc(-50vw + 50%);
-	background-color: navy;
+	background-color: #022C5E;
 	color: white;
 }
+
+#container-p2 {
+	clear: right;
+	margin-top: 17vw;
+	margin-left: calc(-50vw + 50%);
+	padding: 5vw;
+	width: 100vw;
+	border: 2px solid #022C5E;
+}
+
+/* ------ image styling ------- */
 figcaption {
 		color: grey;
 		font-style: italic;
 		font-size: .75em;
 	}
 
+#figure-1 {
+	float: right;
+	padding: 5px;
+	border: 1px solid rgba(150,150,150, 0.2);
+}
+.fig-cap-1 {
+	clear: right;
+	float:right;
+}
 
-/*mobile styling */
+
+
+/* ------ mobile styling ----------- */
 @media only screen and (max-width: 600px) {
 	/*scale header down*/
 	#blog-header h1 {
@@ -59,12 +86,18 @@ figcaption {
 	}
 	/*tighten content*/
 	body {
+		background-color: pink;
 		text-align:center;
 		line-height:1.25em;
 	}
+	p {
+		font-size: 1em;
+		line-height: 6vw;
+		word-spacing: .12em;
+	}
 	h3 {
 		font-size: 10vw;
-		color: red;
+		color: #022C5E;
 	}
 	#container-intro {
 		padding: 1em;
