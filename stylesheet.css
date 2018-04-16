@@ -27,6 +27,12 @@ h1, h2, h3, h4 {
 #container-p1 p, #container-p2 p, #container-p3 p, #container-p4 p, #container-p5 p, #container-p6 p, #container-closer p {
 	color: black;
 }
+#blog-header {
+	margin-bottom: 2vw;
+}
+#header-wrapper #container{
+	z-index:-2;
+}
 
 .ul1 {
 	/*remove standard bullets */
@@ -42,8 +48,64 @@ h1, h2, h3, h4 {
     color: red;
 }
 
+
 /* general styles */
 #chap-head {
+}
+/* side nav style */
+
+#top-side-nav a {
+	text-align: right;
+	position: fixed;
+	z-index: 5;
+	left: -9em;
+	transition: 0.3s;
+	padding: 1em;
+	margin-top: 5vw;
+	width: 14vw;
+	text-decoration: none;
+	font-size: 1em;
+	color: white;
+	border:2px solid black;
+	opacity: 0.5;
+    filter: Alpha(opacity=50); /* IE8 and earlier */
+	border-radius: 0 5px 5px 0;
+}
+
+#top-side-nav a:hover {
+	left:-2px;
+	background-color:white;
+	color: black;
+	opacity: 1;
+    filter: Alpha(opacity=100); /* IE8 and earlier */
+}
+
+#intro-nav {
+	top: 8vw;
+	background-color: #F90000;
+}
+
+#remove-items-nav {
+	top:14vw;
+	background-color: #F90000;
+}
+
+#clean-garage-nav {
+	top:20vw;
+	background-color: #F90000;
+}
+
+#organize-nav {
+	top:26vw;
+	background-color: #F90000;
+}
+#garage-costs-nav {
+	top: 32vw;
+	background-color: #F90000;
+}
+#closing-nav {
+	top: 38vw;
+	background-color: #F90000;
 }
 
 /* container styling */
@@ -51,14 +113,29 @@ h1, h2, h3, h4 {
 	width: 100vw;
 	padding: 8.25vw;
   margin-left: calc(-50vw + 50%);
-	background-color: #022C5E;
-	color: white;
+	margin-top: -20vw;
+	background: url("https://bhgaragedoor.net/wp-content/uploads/2018/04/garage-workbench-e.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#container-intro p {
+		color: white;
+
 }
 
 #container-p1 h2 {
-
+	padding: 3vw;
+	color: white;
+	height: 9vw;
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
 	text-align:center;
 	margin-bottom: 2vw;
+	background-image: url('https://bhgaragedoor.net/wp-content/uploads/2018/04/Untitled-Design.png');
+	background-repeat: no-repeat;
+	background-size: 100vw, 15vw;
+	background-color:#022C5E
 }
 
 #container-p2 {
@@ -149,7 +226,7 @@ img {
 @media only screen and (max-width: 600px) {
 	/*scale header down*/
 	#blog-header h1 {
-		font-size:  15vw;
+		font-size:  3em;
 		margin-left:-2.5%;
 		margin-bottom:0;
 		text-align:center;
@@ -170,7 +247,11 @@ img {
 	}
 	#container-intro {
 		padding: 1em;
+		margin-top: -50vw;
+		background-size: cover;
 	}
+
+
 	.ul1 {
 	/*remove standard bullets */
 	list-style-type: none;
@@ -183,6 +264,9 @@ img {
 	/* scale images */
 	img {
 		width:100%;
+	}
+	#top-side-nav {
+		visibility:hidden;
 	}
 
     }
