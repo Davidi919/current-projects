@@ -26,6 +26,9 @@ h1, h2, h3, h4 {
 	text-transform: capitalize;
 	color:#022C5E;
 }
+img {
+	width: 100%;
+}
 
 /* hover color fix */
 #container-p1 p, #container-p2 p, #container-p3 p, #container-p4 p, #container-p5 p, #container-p6 p, #container-closer p {
