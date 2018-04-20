@@ -26,9 +26,7 @@ h1, h2, h3, h4 {
 	text-transform: capitalize;
 	color:#022C5E;
 }
-img {
-	width: 100%;
-}
+
 
 /* hover color fix */
 #container-p1 p, #container-p2 p, #container-p3 p, #container-p4 p, #container-p5 p, #container-p6 p, #container-closer p {
@@ -125,6 +123,7 @@ img {
 	background: url("https://bhgaragedoor.net/wp-content/uploads/2018/04/garage-workbench-e.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-color: #000;
 }
 
 #container-intro p {
@@ -133,7 +132,7 @@ img {
 }
 /* "remove all the items from your garage" */
 #container-p1 h2 {
-	padding: 3vw;
+	padding: 3.5vw;
 	color: white;
 	height: 9vw;
 	width: 100vw;
@@ -152,8 +151,6 @@ img {
 	margin-left: calc(-50vw + 50%);
 	padding: 8.25vw;
 	width: 100vw;
-	border: 2px solid #022C5E;
-
 }
 /* "Sort through the Items" */
 #container-p2 h2 {
@@ -184,7 +181,7 @@ img {
 	height: 9vw;
 	width: 100vw;
 	padding: 3vw;
-	margin-top: -10vw;
+	margin-top: -12vw;
 	margin-left: calc(-50vw + 50%);
 	background: url("https://bhgaragedoor.net/wp-content/uploads/2018/04/Screen-Shot-2018-04-17-at-5.13.42-PM.png");
 	background-color: #022C5E;
@@ -194,7 +191,7 @@ img {
 }
 /* "Organize Strateegically" */
 #container-p4 {
-	border: 2px solid #022C5E;
+	border-bottom: 2px solid #022C5E;
 	width: 100vw;
 	padding: 8.25vw;
   margin-left: calc(-50vw + 50%);
@@ -202,8 +199,18 @@ img {
 
 }
 #container-p4 h3 {
+	color: white;
+	height: 9vw;
+	width: 100vw;
+	padding: 3vw;
+	margin-top: -12vw;
+	margin-left: calc(-50vw + 50%);
 	text-align:center;
 	font-size: 2em;
+	background-image: url("https://bhgaragedoor.net/wp-content/uploads/2018/04/organize-strategically.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: #022C5E;
 }
 
 
@@ -213,16 +220,21 @@ figcaption {
 		font-style: italic;
 		font-size: .75em;
 	}
-img {
+figure img {
+	width: 50%;
 	padding: 5px;
 	border: 1px solid rgba(150,150,150, 0.2);
 }
+
 #figure-1 {
 	float: right;
+	width: 25em;
+	margin: 5px 5px 0px 5px;
 }
 .fig-cap-1 {
 	clear: right;
 	float:right;
+	margin-right: 5px;
 }
 
 #figure-2 {
@@ -232,30 +244,109 @@ img {
 	clear: right;
 	float: right;
 }
+#figure-3 {
+	width: 40em;
+}
 #figure-4 {
 	float: right;
+	width:25em;
 }
 .fig-cap-4 {
 	clear: right;
 	float: right;
 }
+#figure-5 {
+	margin-left: 25%;
+	width: 30em;
+}
+.fig-cap-5 {
+	text-align:center;
+}
+
 
 #figure-6 {
 	float: right;
+	width: 20em;
 }
 .fig-cap-6 {
 	clear: right;
 	float: right;
 }
+#figure-7 {
+	width: 30em;
+}
 #figure-8 {
 	display: block;
 	margin: 0 auto;
+	width: 25em;
 }
 .fig-cap-8 {
+	text-align: center;
+}
+
+#figure-9 {
+	width: 25em;
+	float: right;
+}
+
+.fig-cap-9 {
+	float: right;
+	clear: right;
+}
+
+
+#figure-11 {
+	display: inline-block;
+	float:right;
+}
+.fig-cap-11 {
+	float: right;
+	clear: right;
+}
+#figure-12 {
+	height: auto;
+	height: 20em;
+}
+
+#figure-13 {
+	height: auto;
+	height:20em;
+}
+.fig-cap-13 {
+	float: right;
+	clear: right;
+}
+
+#figure-12, #figure-13  {
+	display: inline-block;
+	float: left;
+	clear: right;
+}
+
+#figure-15 {
+	width: 20em;
+	height: auto;
+	float: left;
+	clear: both;
+}
+.fig-cap-15 {
+	float: left;
+	clear: left;
+}
+
+#figure-16 {
+	width: 30em;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+.fig-cap-16{
 	text-align:center;
 }
 
-
+#figure-17 {
+	clear: both;
+}
 /* ------ mobile styling ----------- */
 @media only screen and (max-width: 600px) {
 	/*scale header down*/
