@@ -11,8 +11,14 @@
 *
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+@media screen and (max-width: 2560px) and (min-width: 1440px) {
+	#top-side-nav a {
+		color: green;
+		background-color: red;
+	}
+}
 /*wide screen styling */
 body {
 	font-family: 'Roboto Condensed', sans-serif;
@@ -37,6 +43,9 @@ h1, h2, h3, h4 {
 }
 #header-wrapper #container{
 	z-index:-2;
+}
+#to-top {
+	visibility: hidden;
 }
 
 .ul1 {
@@ -63,13 +72,15 @@ h1, h2, h3, h4 {
 	text-align: right;
 	position: fixed;
 	z-index: 5;
-	left: -10em;
+	left: -120px;
 	transition: 0.3s;
-	padding: 1em;
-	margin-top: 5vw;
-	width: 12vw;
+	padding: 10px;
+	margin-top: 5%;
+	width: 140px;
+	height: 50px;
 	text-decoration: none;
-	font-size: 1em;
+	text-align: right;
+	font-size: 16px;
 	color: white;
 	border:2px solid black;
 	opacity: 0.5;
@@ -86,30 +97,30 @@ h1, h2, h3, h4 {
 }
 
 #intro-nav {
-	top: 8vw;
+	top: 80px;
 	background-color: #F90000;
 }
 
 #remove-items-nav {
-	top:14vw;
+	top:140px;
 	background-color: #F90000;
 }
 
 #clean-garage-nav {
-	top:20vw;
+	top:200px;
 	background-color: #F90000;
 }
 
 #organize-nav {
-	top:26vw;
+	top:260px;
 	background-color: #F90000;
 }
 #garage-costs-nav {
-	top: 32vw;
+	top: 320px;
 	background-color: #F90000;
 }
 #closing-nav {
-	top: 38vw;
+	top: 380px;
 	background-color: #F90000;
 }
 
@@ -120,7 +131,7 @@ h1, h2, h3, h4 {
   margin-left: calc(-50vw + 50%);
 	margin-top: -20vw;
 	margin-bottom:0;
-	background: url("https://bhgaragedoor.net/wp-content/uploads/2018/04/garage-workbench-e.jpg");
+	background: url("https://bhgaragedoor.net/wp-content/uploads/2018/04/garage-workbench-compressed.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #000;
@@ -191,7 +202,6 @@ h1, h2, h3, h4 {
 }
 /* "Organize Strateegically" */
 #container-p4 {
-	border-bottom: 2px solid #022C5E;
 	width: 100vw;
 	padding: 8.25vw;
   margin-left: calc(-50vw + 50%);
@@ -213,14 +223,82 @@ h1, h2, h3, h4 {
 	background-color: #022C5E;
 }
 
+#container-p5 {
+	width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	background-color: rgba(0,0,0,0.075);
+	padding-left: 9vw;
+	padding-right: 9vw;
+  padding-bottom: 4em;
+	margin-bottom: -4em;
+}
 
-/* ------ image styling ------- */
+
+#container-p5 h3 {
+	color: #fff;
+	background-color: #022C5E;
+	text-align: center;
+	height: 9vw;
+	width: 100vw;
+	padding: 3vw;
+	margin-top: -12vw;
+	margin-left: calc(-50vw + 50%);
+	background: url("https://bhgaragedoor.net/wp-content/uploads/2018/04/cost-considerations.png");
+	background-color: #022C5E;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left;
+}
+
+#container-p6 {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 0em;
+  padding-left: 9vw;
+  padding-right: 9vw;
+  padding-top: 1em;
+}
+
+#container-p6 h3 {
+	height: 9vw;
+	width: 100vw;
+	padding: 3vw;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  background-color: #022C5E;
+	background: url("https://bhgaragedoor.net/wp-content/uploads/2018/04/cost-thinking.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+
+}
+
+#container-closer {
+	width: 100vw;
+	padding: 3vw 9vw;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+/* ====================================== sub heading styling ====================================== */
+#sub-18 {
+	clear: both;
+	display: block;
+	margin:auto;
+	text-align: center;
+}
+/* ====================================== image styling ====================================== */
 figcaption {
 		color: grey;
 		font-style: italic;
 		font-size: .75em;
+		margin: auto 10px;
 	}
 figure img {
+	margin: 12px 10px;
 	width: 50%;
 	padding: 5px;
 	border: 1px solid rgba(150,150,150, 0.2);
@@ -318,6 +396,7 @@ figure img {
 }
 
 #figure-12, #figure-13  {
+	width: 425px;
 	display: inline-block;
 	float: left;
 	clear: right;
@@ -341,13 +420,69 @@ figure img {
 	margin: auto;
 }
 .fig-cap-16{
-	text-align:center;
+	text-align: center;
 }
 
 #figure-17 {
+	height:auto;
+	width: 25em;
+	display: block;
+	float: left;
+	overflow: hidden;
+}
+.fig-cap-17 {
+	float: left;
+	clear: both;
+
+}
+
+#figure-18 {
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.fig-cap-18 {
+	text-align:center;
+}
+
+#figure-19 {
+	float: right;
+	width: 30em;
+}
+.fig-cap-19 {
+	float: right;
 	clear: both;
 }
-/* ------ mobile styling ----------- */
+
+#figure-20 {
+	display: block;
+	height: auto;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fig-cap-20 {
+	text-align: center;
+}
+#figure-21 {
+	width: 20em;
+	height: auto;
+	float: right;
+}
+.fig-cap-21 {
+	float: right;
+	clear: both;
+}
+#figure-23 {
+	display: block;
+	height: auto;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ------------------------------- mobile styling ------------------------------ */
 @media only screen and (max-width: 600px) {
 	/*scale header down*/
 	#blog-header h1 {
@@ -355,6 +490,9 @@ figure img {
 		margin-left:-2.5%;
 		margin-bottom:0;
 		text-align:center;
+	}
+	#to-top {
+		visibility: visible;
 	}
 	/*tighten content*/
 	body {
@@ -366,16 +504,27 @@ figure img {
 		line-height: 6vw;
 		word-spacing: .12em;
 	}
-	h3 {
-		font-size: 10vw;
-		color: #022C5E;
+	h2 {
+		font-size: auto;
+		height: 4em;
+	}
+	h4 {
+		font-size: 22em;
 	}
 	#container-intro {
 		padding: 1em;
 		margin-top: -50vw;
 		background-size: cover;
 	}
-
+	#container-p1 h3, #container-p2 h3, #container-p3 h3, #container-p4 h3, #container-p5 h3, #container-p6 h3, #container-closer h3, #container-p1 h2, #container-p2 h2, #container-p3 h2, #container-p4 h2, #container-p5 h2, #container-p6 h2, #container-closer h2 {
+		height: auto;
+		width: 100vw;
+		margin-left: calc(-50vw + 50%);
+		text-align: center;
+		font-size: 1.75em;
+		background-size: contain;
+		background-color: #022C5E;
+	}
 
 	.ul1 {
 	/*remove standard bullets */
@@ -387,11 +536,30 @@ figure img {
 		padding-top:1.75em;
 	}
 	/* scale images */
-	img {
-		width:100%;
+	#figure-1, #figure-2, #figure-3, #figure-4, #figure-5, #figure-6, #figure-7, #figure-8, #figure-9, #figure-10, #figure-11, #figure-12, #figure-13, #figure-14, #figure-15, #figure-16, #figure-17, #figure-18, #figure-19, #figure-20, #figure-21, #figure-22, #figure-23  {
+		width: 100%;
+		margin: auto;
+		float: none;
+	}
+
+	figcaption {
+		float: none;
+		clear: both;
+		text-align: center;
 	}
 	#top-side-nav {
 		visibility:hidden;
 	}
+	#sub-heading-3, #sub-heading-4 {
+		color: #022C5E;
+		background-color: white !important;
+	}
+	#chap-head-4 h2 {
+		border: 5px solid red;
+		color: #022C5E;
+		background-color: white;
+	}
+
+
 
     }
